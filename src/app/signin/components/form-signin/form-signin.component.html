@@ -1,0 +1,13 @@
+<section>
+    <form class="form" [formGroup]="formGroup">
+        <div class="control-form">
+            <label>Correo electrónico:</label>
+            <input placeholder="@" formControlName="email" type="email" name="emailText" />
+        </div>
+        <div class="control-form">
+            <label>Contraseña:</label>
+            <input formControlName="password" type="password" name="passwordText" />
+        </div>
+        <button (click)="loggin()" [disabled]="formGroup.invalid">Ingresar</button>
+    </form>
+</section>

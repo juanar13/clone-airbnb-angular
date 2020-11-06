@@ -1,0 +1,20 @@
+<section>
+    <form class="form" [formGroup]="formGroup">
+        <div class="control-form">
+            <label>Fecha inicial:</label>
+            <input formControlName="initialDate" type="date" name="dateText" />
+        </div>
+        <span class="error">{{ getError('initialDate') }}</span>
+        <div class="control-form">
+            <label>Fecha final:</label>
+            <input formControlName="finalDate" type="date" name="dateText" />
+        </div>
+        <span class="error">{{ getError('finalDate') }}</span>
+        <div class="control-form">
+            <label>Comentarios adicionales:</label>
+            <input formControlName="comments" type="string" name="commentsText" />
+        </div>
+        <br/>
+        <button (click)="book()" [disabled]="formGroup.invalid">Ingresar</button>
+    </form>
+</section>

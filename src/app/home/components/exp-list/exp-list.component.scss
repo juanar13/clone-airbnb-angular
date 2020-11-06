@@ -1,0 +1,11 @@
+section {
+display: flex;
+  justify-content: flex-start;
+  border: 2px solid #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+  img {
+      border-radius: 8px;
+  }
+}

@@ -1,0 +1,8 @@
+<section class="card-detail">
+    <img [src]="experience?.image" />
+    <p>{{experience?.description}}</p>
+    <app-score [score]="experience?.score"></app-score>
+    <a [routerLink]="['/booking/' + experience._id]">
+        <button>¡Reserva aqui!</button>
+    </a>
+</section>>
